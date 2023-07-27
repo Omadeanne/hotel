@@ -63,7 +63,7 @@ a {
   color: #fff;
   text-decoration: none;
 }
-#navbar h1 {
+#navbar .logo {
   float: left;
   padding-top: 20px;
 }
@@ -136,17 +136,17 @@ a {
 #home-info 
 .info-img {
   float: left;
-  width: 40%;
+  width: 60%;
   background: url(../images/resort2.jpg) no-repeat;
   min-height: 100%;
 }
 
 .info-content {
   float: right;
-  width: 60%;
-   height: 100%;
+  width: 40%;
+  height: 80%;
   text-align: center;
-  padding: 100px 30px;
+  padding: 100px 100px;
   overflow: hidden;
 
 }
@@ -158,11 +158,10 @@ width: 33.3%;
 padding: 50px;
 text-align: center;
 background: #1b5e5b;
+color: #fff;
 }
 
-#box i {
-  margin-bottom: 10px;
-}
+
 
 /* about info */
 #about-info .info-right {
@@ -172,13 +171,15 @@ background: #1b5e5b;
 }
 #about-info .info-right img {
   display: block;
+  /* margin-right: 50% ; */
   margin: auto;
-  width: 70%;
-  border-radius: 50%;
+  width: 80%;
+  border-radius: 20%;
 }
 #about-info .info-left {
   float: left;
   width: 50%;
+  text-align: left;
   min-height: 100%;
 }
 #testimonials h2 {
@@ -188,7 +189,7 @@ background: #1b5e5b;
 }
 
 #testimonials {
-  height: 600px;
+  height: 100%;
   background: url(../images/hotel2.jpg) no-repeat center center/cover;
   padding-top: 40px;
 }
@@ -212,8 +213,14 @@ background: #1b5e5b;
 #message{
   
   border: #ddd 1px solid;
-  border-radius: 5px;
+  border-radius: 5px; 
 }
+#message:focus,
+.form-group input:focus{
+outline: none;
+border-color: #37bcb6;
+}
+
 #container {
   max-width: 500px;
   margin: 30px auto;
